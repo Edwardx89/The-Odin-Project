@@ -1,2 +1,2 @@
 # The-Odin-Project
-# USe # to create headers
+This is the repository where all the projects from The Odin Project will sit.
