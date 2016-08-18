@@ -1,10 +1,13 @@
 $(document).ready(function  () {
-  for (i=0; i<16; i++){
-    $('tbody').append('<tr></tr');
+  for (i=0;i<16;i++) {
+      $('tbody').append('<tr></tr>');
   }
-  for (i=0; i<16; i++){
-    $('tbody tr').append('<td><div></div></td>');
+  for (i=0;i<16;i++) {
+      $('tbody tr').append('<td><div></div></td>');
   }
+
+  $('table').width('320px');
+
   $('div').mouseenter(function(){
     $(this).css('background-color', 'red');
   });
@@ -15,6 +18,7 @@ $(document).ready(function  () {
 });
 
 function reset(){
+    $('table').width('revert');
     var g=prompt('What should the side length (in squares) of the grid be?');
     if ((isNaN(g))||(g==="")){
         g=prompt('Sorry, that wasn\'t a number. What should the side length (in squares) of the grid be?');
